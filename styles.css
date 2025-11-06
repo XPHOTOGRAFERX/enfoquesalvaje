@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* ✅ NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00ffb3;
+}
+
+/* ✅ HERO */
+.hero {
+    height: 100vh;
+    background: url("images/portada.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+/* ✅ GALERÍA */
+.galeria {
+    padding: 100px 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ TEXTO */
+.sobre-mi, .contacto {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+/* ✅ BOTÓN CONTACTO */
+.boton-contacto {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #00ffb3;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+.logo img {
+    height: 60px; /* Tamaño del logo */
+    width: auto; /* Mantiene proporción */
+    object-fit: contain; /* Evita deformación */
+}
